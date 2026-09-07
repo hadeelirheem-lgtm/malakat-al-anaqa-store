@@ -1,0 +1,8 @@
+# منع تنفيذ أي ملف PHP داخل مجلد المرفوعات (حماية أمنية)
+<FilesMatch "\.(php|php5|phtml|phar)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# إلغاء فهرسة المجلد
+Options -Indexes

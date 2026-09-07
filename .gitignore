@@ -1,0 +1,17 @@
+# الاعتمادات الحساسة — لا تُرفع للعموم أبداً
+mail_private.php
+.env
+.env.local
+
+# مكونات جاهزة
+/vendor/
+
+# ملفات مرفوعة من المستخدمين
+# صور المنتجات تُرفع، أما مجلد إيصالات الدفع (بيانات العملاء) فيبقى مستثنى
+uploads/*
+!uploads/.htaccess
+!uploads/*.png
+!uploads/*.jpg
+!uploads/*.jpeg
+!uploads/*.gif
+!uploads/*.webp
